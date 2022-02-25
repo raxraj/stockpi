@@ -1,8 +1,6 @@
 name: stan_env
 channels:
-  - msys2
   - conda-forge
-  - defaults
 dependencies:
   - ca-certificates=2021.10.8=h5b45459_0
   - certifi=2021.10.8=py37h03978a9_1
@@ -173,7 +171,6 @@ dependencies:
   - uvicorn==0.15.0
   - validators==0.18.2
   - watchdog==2.1.6
-  - watchgod==0.7
   - wcwidth==0.2.5
   - webencodings==0.5.1
   - websockets==10.1
