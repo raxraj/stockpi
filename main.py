@@ -12,7 +12,17 @@ from plotly import graph_objs as go
 START = "2017-01-01"
 TODAY = (date.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d");
 
+
 st.set_page_config(page_title='StockPi: Predict Stocks', layout='wide', menu_items=None)
+
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.title("StockPi")
 
 stocks = ["Reliance - RELIANCE.NS", "Apple - AAPL", "Google - GOOG", "Microsoft - MSFT", "Tata Consultancy Service - TCS.NS", "NIfty 50 - NSEI"]
